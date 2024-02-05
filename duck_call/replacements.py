@@ -1,6 +1,7 @@
 """
 Script for replacing table and field names in query after scrubbing data
 """
+
 from hashlib import md5
 
 salt = md5("secret")
