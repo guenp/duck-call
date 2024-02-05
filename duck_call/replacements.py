@@ -28,7 +28,7 @@ replacements = {
     "SomeValue": md5(b"SomeValue" + salt).hexdigest(),
 }
 
-for (a, b) in replacements.items():
+for a, b in replacements.items():
     query_to_scrub = query_to_scrub.replace(a, b)
 
 print(query_to_scrub)
